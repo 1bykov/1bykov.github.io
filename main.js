@@ -119,6 +119,16 @@
   const curtainLabel = document.querySelector('.curtain-label');
   const ready = () => root.classList.add('ready');
 
+  window.__go = (href, label) => {
+    const url = new URL(href, location.href);
+    if (reduce || !curtain) { location.href = url.href; return; }
+    curtainLabel.textContent = label || '';
+    store.set('nav', label || '');
+    root.classList.remove('entering', 'entered');
+    root.classList.add('leaving');
+    setTimeout(() => { location.href = url.href; }, 620);
+  };
+
   if (!reduce && curtain) {
     document.addEventListener('click', (e) => {
       const a = e.target.closest('a[href]');

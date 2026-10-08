@@ -19,6 +19,21 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flag-gb" viewBox="0 0 60 40" preserveAspectRatio="xMidYMid slice">
+    <clipPath id="gb-a"><path d="M0 0h60v40H0z"/></clipPath>
+    <clipPath id="gb-b"><path d="M30 20h30v20zv20H0zH0V0zV0h30z"/></clipPath>
+    <g clip-path="url(#gb-a)">
+      <path d="M0 0h60v40H0z" fill="#012169"/>
+      <path d="M0 0l60 40M60 0L0 40" stroke="#fff" stroke-width="8"/>
+      <path d="M0 0l60 40M60 0L0 40" clip-path="url(#gb-b)" stroke="#C8102E" stroke-width="5"/>
+      <path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="13"/>
+      <path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="8"/>
+    </g>
+  </symbol>
+  <symbol id="flag-fr" viewBox="0 0 3 2"><path fill="#0055A4" d="M0 0h1v2H0z"/><path fill="#fff" d="M1 0h1v2H1z"/><path fill="#EF4135" d="M2 0h1v2H2z"/></symbol>
+  <symbol id="flag-ru" viewBox="0 0 3 2"><path fill="#fff" d="M0 0h3v.667H0z"/><path fill="#0039A6" d="M0 .667h3v.667H0z"/><path fill="#D52B1E" d="M0 1.333h3V2H0z"/></symbol>
+</svg>
 <div class="loader" aria-hidden="true"><p class="label">Loading</p><div class="loader-count">0</div></div>
 <div class="curtain" aria-hidden="true"><span class="curtain-label"></span></div>
 
@@ -41,31 +56,31 @@
     <div class="stat" data-reveal style="--d:2"><b>DBS</b><span>checked, updated September 2026</span></div>
   </div>
   <h2 class="section-title" data-split>Subjects</h2>
-  <article class="row" data-reveal>
+  <article class="row" id="economics" data-reveal>
     <div class="when">IB</div>
-    <div><h3>Economics</h3></div>
-    <div><ul><li>International Baccalaureate Diploma.</li></ul></div>
+    <div class="who"><a class="logo" href="https://www.ibo.org" target="_blank" rel="noopener" aria-label="International Baccalaureate website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://ibo.org&amp;size=128" alt="International Baccalaureate logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>IB</b></a><div><h3>Economics</h3></div></div>
+    <div><ul><li><a class="org" href="https://www.ibo.org" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://ibo.org&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">IB</a> Diploma Programme.</li></ul></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="business" data-reveal>
     <div class="when">IB, A-Level</div>
-    <div><h3>Business</h3></div>
-    <div><ul><li>International Baccalaureate and AQA A-Level.</li></ul></div>
+    <div class="who"><a class="logo" href="https://www.aqa.org.uk" target="_blank" rel="noopener" aria-label="AQA website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://aqa.org.uk&amp;size=128" alt="AQA logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>AQA</b></a><div><h3>Business</h3></div></div>
+    <div><ul><li><a class="org" href="https://www.ibo.org" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://ibo.org&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">IB</a> Diploma Programme and <a class="org" href="https://www.aqa.org.uk" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://aqa.org.uk&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">AQA</a> A-Level.</li></ul></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="physics" data-reveal>
     <div class="when">To undergraduate</div>
-    <div><h3>Physics</h3></div>
-    <div><ul><li>Including Scottish Advanced Higher. BSc Physics, University College London.</li></ul></div>
+    <div class="who"><a class="logo" href="https://www.ucl.ac.uk" target="_blank" rel="noopener" aria-label="University College London website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://ucl.ac.uk&amp;size=128" alt="University College London logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>UCL</b></a><div><h3>Physics</h3></div></div>
+    <div><ul><li>Including <a class="org" href="https://www.sqa.org.uk" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://sqa.org.uk&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">SQA</a> Advanced Higher and <a class="org" href="https://www.cambridgeinternational.org" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://cambridgeinternational.org&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">Cambridge IGCSE</a>. BSc Physics, <a class="org" href="https://www.ucl.ac.uk" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://ucl.ac.uk&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">University College London</a>.</li></ul></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="maths" data-reveal>
     <div class="when">To undergraduate</div>
-    <div><h3>Maths</h3></div>
+    <div class="who"><div><h3>Maths</h3></div></div>
     <div><ul><li>School and first-year university level.</li></ul></div>
   </article>
   <h2 class="section-title" data-split>Speaking</h2>
-  <article class="row" data-reveal>
+  <article class="row" id="speaking" data-reveal>
     <div class="when">Conferences</div>
-    <div><h3>Children for a Better World</h3></div>
-    <div><ul><li>Lectures on AI in education for IB students.</li></ul></div>
+    <div class="who"><div><h3>Children for a Better World</h3></div></div>
+    <div><ul><li>Lectures on AI in education for <a class="org" href="https://www.ibo.org" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://ibo.org&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">IB</a> students.</li></ul></div>
   </article>
   <div class="btn-row" data-reveal><a class="btn" href="mailto:igbyko@gmail.com?subject=Tutoring%20enquiry">Ask about lessons</a></div>
 </section>
@@ -84,7 +99,7 @@
       <a href="https://github.com/1bykov" target="_blank" rel="noopener me">GitHub</a>
       <a href="Igor-Bykov-CV.pdf" target="_blank">CV (PDF)</a>
     </div>
-    <span>© 2026 Igor Bykov. London, UK.</span>
+    <span>© 2026 Igor Bykov. London, UK <svg class="flag" role="img" aria-label="United Kingdom"><use href="#flag-gb"/></svg></span>
   </div>
 </footer>
 <script src="main.js" defer></script>

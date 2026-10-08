@@ -19,6 +19,21 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flag-gb" viewBox="0 0 60 40" preserveAspectRatio="xMidYMid slice">
+    <clipPath id="gb-a"><path d="M0 0h60v40H0z"/></clipPath>
+    <clipPath id="gb-b"><path d="M30 20h30v20zv20H0zH0V0zV0h30z"/></clipPath>
+    <g clip-path="url(#gb-a)">
+      <path d="M0 0h60v40H0z" fill="#012169"/>
+      <path d="M0 0l60 40M60 0L0 40" stroke="#fff" stroke-width="8"/>
+      <path d="M0 0l60 40M60 0L0 40" clip-path="url(#gb-b)" stroke="#C8102E" stroke-width="5"/>
+      <path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="13"/>
+      <path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="8"/>
+    </g>
+  </symbol>
+  <symbol id="flag-fr" viewBox="0 0 3 2"><path fill="#0055A4" d="M0 0h1v2H0z"/><path fill="#fff" d="M1 0h1v2H1z"/><path fill="#EF4135" d="M2 0h1v2H2z"/></symbol>
+  <symbol id="flag-ru" viewBox="0 0 3 2"><path fill="#fff" d="M0 0h3v.667H0z"/><path fill="#0039A6" d="M0 .667h3v.667H0z"/><path fill="#D52B1E" d="M0 1.333h3V2H0z"/></symbol>
+</svg>
 <div class="loader" aria-hidden="true"><p class="label">Loading</p><div class="loader-count">0</div></div>
 <div class="curtain" aria-hidden="true"><span class="curtain-label"></span></div>
 
@@ -35,35 +50,35 @@
   <p class="lede" data-reveal>Tools built on public power market data, and two pieces of research.</p>
 </section>
 <section class="wrap">
-  <article class="row" data-reveal>
+  <article class="row" id="pipeline" data-reveal>
     <div class="when">Sep 2025 to Mar 2026</div>
-    <div><h3>EU Power Market Data and Forecasting Pipeline</h3></div>
-    <div><ul><li>A pipeline that ingests ENTSO-E day-ahead prices, load and generation across EU bidding zones, with a monitoring dashboard and ARIMA, VAR and XGBoost forecasts.</li></ul><p class="tags">Python, DuckDB, ENTSO-E API</p></div>
+    <div class="who"><a class="logo" href="https://www.entsoe.eu" target="_blank" rel="noopener" aria-label="ENTSO-E website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://entsoe.eu&amp;size=128" alt="ENTSO-E logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>E</b></a><div><h3>EU Power Market Data and Forecasting Pipeline</h3></div></div>
+    <div><ul><li>A pipeline that ingests <a class="org" href="https://www.entsoe.eu" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://entsoe.eu&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">ENTSO-E</a> day-ahead prices, load and generation across EU bidding zones, with a monitoring dashboard and ARIMA, VAR and XGBoost forecasts.</li></ul><p class="tags"><a class="org" href="https://www.python.org" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://python.org&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">Python</a>, <a class="org" href="https://duckdb.org" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://duckdb.org&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">DuckDB</a>, ENTSO-E API</p></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="pricer" data-reveal>
     <div class="when">Sep 2025 to Mar 2026</div>
-    <div><h3>Power Options Pricer and Spark Spread Risk Engine</h3></div>
-    <div><ul><li>A Black-76 and Monte Carlo pricer with antithetic and control variates and pathwise Greeks, plus an Euler-Maruyama spark spread simulator with GARCH volatility.</li></ul><p class="tags">Python, Monte Carlo, GARCH</p></div>
+    <div class="who"><div><h3>Power Options Pricer and Spark Spread Risk Engine</h3></div></div>
+    <div><ul><li>A Black-76 and Monte Carlo pricer with antithetic and control variates and pathwise Greeks, plus an Euler-Maruyama spark spread simulator with GARCH volatility.</li></ul><p class="tags"><a class="org" href="https://www.python.org" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://python.org&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">Python</a>, Monte Carlo, GARCH</p></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="remit" data-reveal>
     <div class="when">2026</div>
-    <div><h3>GB REMIT Signal Aggregator</h3></div>
-    <div><ul><li>Reads the public Elexon feed of power plant outage notices, merges revisions of the same outage into one record and scores each by the capacity it removes.</li></ul><p class="tags">Python, Elexon BMRS, static HTML dashboard</p></div>
+    <div class="who"><a class="logo" href="https://www.elexon.co.uk" target="_blank" rel="noopener" aria-label="Elexon website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://elexon.co.uk&amp;size=128" alt="Elexon logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>E</b></a><div><h3>GB REMIT Signal Aggregator</h3></div></div>
+    <div><ul><li>Reads the public <a class="org" href="https://www.elexon.co.uk" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://elexon.co.uk&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">Elexon</a> feed of power plant outage notices, merges revisions of the same outage into one record and scores each by the capacity it removes.</li></ul><p class="tags"><a class="org" href="https://www.python.org" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://python.org&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">Python</a>, Elexon BMRS, static HTML dashboard</p></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="jellyfish" data-reveal>
     <div class="when">In progress</div>
-    <div><h3>Jellyfish Blooms and Power Station Outages</h3></div>
-    <div><ul><li>Jellyfish swarms can clog the cooling water intakes of coastal power stations in summer. This project tries to predict blooms early enough to flag outage risk.</li></ul><p class="tags">Python</p></div>
+    <div class="who"><div><h3>Jellyfish Blooms and Power Station Outages</h3></div></div>
+    <div><ul><li>Jellyfish swarms can clog the cooling water intakes of coastal power stations in summer. This project tries to predict blooms early enough to flag outage risk.</li></ul><p class="tags"><a class="org" href="https://www.python.org" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://python.org&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">Python</a></p></div>
   </article>
   <h2 class="section-title" data-split>Research</h2>
-  <article class="row" data-reveal>
+  <article class="row" id="thesis-hec" data-reveal>
     <div class="when">2026</div>
-    <div><h3>Viability of Commodity Futures as Hedging Solutions for Utility Debt</h3><p class="role">Master's thesis, HEC Paris</p></div>
+    <div class="who"><a class="logo" href="https://www.hec.edu" target="_blank" rel="noopener" aria-label="HEC Paris website"><img src="https://www.hec.edu/themes/custom/hec_theme/logo.svg" alt="HEC Paris logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>HEC</b></a><div><h3>Viability of Commodity Futures as Hedging Solutions for Utility Debt</h3><p class="role">Master's thesis, <a class="org" href="https://www.hec.edu" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://hec.edu&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">HEC Paris</a></p></div></div>
     <div><ul></ul></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="thesis-ucl" data-reveal>
     <div class="when">2024</div>
-    <div><h3>Feasibility of Repurposing EV Batteries for Power Storage in Sub-Saharan Africa</h3><p class="role">Bachelor's thesis, University College London</p></div>
+    <div class="who"><a class="logo" href="https://www.ucl.ac.uk" target="_blank" rel="noopener" aria-label="University College London website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://ucl.ac.uk&amp;size=128" alt="University College London logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>UCL</b></a><div><h3>Feasibility of Repurposing EV Batteries for Power Storage in Sub-Saharan Africa</h3><p class="role">Bachelor's thesis, <a class="org" href="https://www.ucl.ac.uk" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://ucl.ac.uk&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">University College London</a></p></div></div>
     <div><ul></ul></div>
   </article>
   <div class="btn-row" data-reveal><a class="btn" href="https://github.com/1bykov" target="_blank" rel="noopener">Code on GitHub</a></div>
@@ -83,7 +98,7 @@
       <a href="https://github.com/1bykov" target="_blank" rel="noopener me">GitHub</a>
       <a href="Igor-Bykov-CV.pdf" target="_blank">CV (PDF)</a>
     </div>
-    <span>© 2026 Igor Bykov. London, UK.</span>
+    <span>© 2026 Igor Bykov. London, UK <svg class="flag" role="img" aria-label="United Kingdom"><use href="#flag-gb"/></svg></span>
   </div>
 </footer>
 <script src="main.js" defer></script>

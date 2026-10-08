@@ -19,6 +19,21 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flag-gb" viewBox="0 0 60 40" preserveAspectRatio="xMidYMid slice">
+    <clipPath id="gb-a"><path d="M0 0h60v40H0z"/></clipPath>
+    <clipPath id="gb-b"><path d="M30 20h30v20zv20H0zH0V0zV0h30z"/></clipPath>
+    <g clip-path="url(#gb-a)">
+      <path d="M0 0h60v40H0z" fill="#012169"/>
+      <path d="M0 0l60 40M60 0L0 40" stroke="#fff" stroke-width="8"/>
+      <path d="M0 0l60 40M60 0L0 40" clip-path="url(#gb-b)" stroke="#C8102E" stroke-width="5"/>
+      <path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="13"/>
+      <path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="8"/>
+    </g>
+  </symbol>
+  <symbol id="flag-fr" viewBox="0 0 3 2"><path fill="#0055A4" d="M0 0h1v2H0z"/><path fill="#fff" d="M1 0h1v2H1z"/><path fill="#EF4135" d="M2 0h1v2H2z"/></symbol>
+  <symbol id="flag-ru" viewBox="0 0 3 2"><path fill="#fff" d="M0 0h3v.667H0z"/><path fill="#0039A6" d="M0 .667h3v.667H0z"/><path fill="#D52B1E" d="M0 1.333h3V2H0z"/></symbol>
+</svg>
 <div class="loader" aria-hidden="true"><p class="label">Loading</p><div class="loader-count">0</div></div>
 <div class="curtain" aria-hidden="true"><span class="curtain-label"></span></div>
 
@@ -35,47 +50,52 @@
   <p class="lede" data-reveal>Power trading, corporate structuring and capital modelling, in London and Paris.</p>
 </section>
 <section class="wrap">
-  <article class="row" data-reveal>
+  <article class="row" id="castleton" data-reveal>
     <div class="when">Jul 2026 to Sep 2026</div>
-    <div><h3>Castleton Commodities International</h3><p class="role">Power Summer Analyst, London</p><span class="tag">Joining full-time July 2027</span></div>
-    <div><ul><li>Lifted Sharpe 33% on a 4h Dutch battery against the legacy model, forecasting TenneT regulation states with a 15-minute semi-Markov model to optimise pricing and sizing of aFRR voluntary bids.</li><li>Reduced stack model bias by 2 €/MWh for Netherlands price forecasts by turning unstructured EEX ad-hoc tickers into a safe time series, strengthening the desk's visibility on constraint shifts.</li><li>Researched El Niño using historical weather years to generate trade ideas on Germany-France stack asymmetry, presented to traders across carbon, gas and power.</li></ul></div>
+    <div class="who"><a class="logo" href="https://www.cci.com" target="_blank" rel="noopener" aria-label="Castleton Commodities International website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://cci.com&amp;size=128" alt="Castleton Commodities International logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>CCI</b></a><div><h3>Castleton Commodities International</h3><p class="role">Power Summer Analyst, EU Power Desk, London <svg class="flag" role="img" aria-label="United Kingdom"><use href="#flag-gb"/></svg></p><span class="tag">Joining full-time July 2027</span></div></div>
+    <div><ul><li>Lifted Sharpe 33% on a 4h Dutch battery against the legacy model, forecasting <a class="org" href="https://www.tennet.eu" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://tennet.eu&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">TenneT</a> regulation states with a 15-minute semi-Markov model to optimise pricing and sizing of aFRR voluntary bids.</li><li>Reduced stack model bias by 2 €/MWh for Netherlands price forecasts by turning unstructured <a class="org" href="https://www.eex.com" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://eex.com&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">EEX</a> ad-hoc tickers into a safe time series, strengthening the desk's visibility on constraint shifts.</li><li>Researched El Niño using historical weather years to generate trade ideas on Germany-France stack asymmetry, presented to traders across carbon, gas and power.</li></ul></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="cacib" data-reveal>
     <div class="when">Aug 2024 to Aug 2025</div>
-    <div><h3>Crédit Agricole CIB</h3><p class="role">Corporate Structuring Off-Cycle Analyst, London</p><span class="tag">Return offer received</span></div>
+    <div class="who"><a class="logo" href="https://www.ca-cib.com" target="_blank" rel="noopener" aria-label="Crédit Agricole CIB website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://ca-cib.com&amp;size=128" alt="Crédit Agricole CIB logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>CA</b></a><div><h3>Crédit Agricole CIB</h3><p class="role">Corporate Structuring Off-Cycle Analyst, Global Markets, London <svg class="flag" role="img" aria-label="United Kingdom"><use href="#flag-gb"/></svg></p><span class="tag">Return offer received</span></div></div>
     <div><ul><li>Enabled a hedging mandate for a leading Finnish TSO, plus 15 pitches, by building a regulatory WACC Monte Carlo model with market pricing, scaled across UK and European regimes.</li><li>Presented own regulatory analysis to the CFO of an Italian utility (SGI) alongside the team's VP.</li><li>Contributed to a Structuring and DCM pitch on balance-sheet robustness under curve shifts, delivering 20+ year fixed/floating and Brent/TTF sensitivities across seven oil and gas majors.</li><li>Supported the continuous hedging policy of a major Canadian midstream operator, producing swaption volatility analytics with the New York Sales and Structuring teams.</li></ul></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="petroineos" data-reveal>
     <div class="when">Jun 2024 to Jul 2024</div>
-    <div><h3>PetroIneos</h3><p class="role">Power Desk Data Summer Analyst, London</p></div>
+    <div class="who"><a class="logo" href="https://www.petroineos.com" target="_blank" rel="noopener" aria-label="PetroIneos website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://petroineos.com&amp;size=128" alt="PetroIneos logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>PI</b></a><div><h3>PetroIneos</h3><p class="role">Power Desk Data Summer Analyst, London <svg class="flag" role="img" aria-label="United Kingdom"><use href="#flag-gb"/></svg></p></div></div>
     <div><ul><li>Cut weekly research time by two hours per analyst on the Power Trading desk by building a retrieval-augmented tool that centralises internal and external views in one interactive LLM chat.</li></ul></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="aon" data-reveal>
     <div class="when">Jun 2023 to Aug 2023</div>
-    <div><h3>Aon</h3><p class="role">Capital Modelling Summer Analyst, London</p><span class="tag">Return offer received</span></div>
+    <div class="who"><a class="logo" href="https://www.aon.com" target="_blank" rel="noopener" aria-label="Aon website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://aon.com&amp;size=128" alt="Aon logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>A</b></a><div><h3>Aon</h3><p class="role">Capital Modelling Summer Analyst, London <svg class="flag" role="img" aria-label="United Kingdom"><use href="#flag-gb"/></svg></p><span class="tag">Return offer received</span></div></div>
     <div><ul><li>Advised clients on catastrophe bonds for diversification, based on cross-asset correlations.</li><li>Enhanced stochastic capital models by embedding climate risks, in liaison with three teams.</li></ul></div>
   </article>
   <h2 class="section-title" data-split>Other experience</h2>
-  <article class="row" data-reveal>
+  <article class="row" id="vinci" data-reveal>
     <div class="when">Apr 2026 to May 2026</div>
-    <div><h3>VINCI Airports</h3><p class="role">Student Consultant, Paris</p></div>
+    <div class="who"><a class="logo" href="https://www.vinci-airports.com" target="_blank" rel="noopener" aria-label="VINCI Airports website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://vinci-airports.com&amp;size=128" alt="VINCI Airports logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>VA</b></a><div><h3>VINCI Airports</h3><p class="role">Student Consultant, Paris <svg class="flag" role="img" aria-label="France"><use href="#flag-fr"/></svg></p></div></div>
     <div><ul><li>Selected to advise leadership on decarbonisation objectives, modelling solar, battery storage and PPA structures across Portuguese airports.</li><li>Built a three-statement model and stress-tested PPA amortisation structures on the balance sheet, presenting IFRS 9 hedge accounting implications to the division CFO.</li></ul></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="voyce" data-reveal>
+    <div class="when">Sep 2025 to Mar 2026</div>
+    <div class="who"><span class="logo nologo"><b>V</b></span><div><h3>VOYCE</h3><p class="role">Capital Markets Research</p></div></div>
+    <div><ul></ul></div>
+  </article>
+  <article class="row" id="educator" data-reveal>
     <div class="when">Sep 2022 to present</div>
-    <div><h3>Independent Educator</h3><p class="role">Remote</p></div>
+    <div class="who"><div><h3>Independent Educator</h3><p class="role">Remote</p></div></div>
     <div><ul><li>Built a 2,000+ hour tutoring practice in Maths, Physics and Economics to undergraduate level.</li><li>Lecture at the "Children for a Better World" conferences on AI in education for IB students.</li></ul></div>
   </article>
   <h2 class="section-title" data-split>Education</h2>
-  <article class="row" data-reveal>
+  <article class="row" id="hec" data-reveal>
     <div class="when">Sep 2025 to Jun 2026</div>
-    <div><h3>HEC Paris</h3><p class="role">MSc International Finance, 3.8/4.0 GPA</p></div>
-    <div><ul><li>Energy Markets (top of class), Electricity Markets, Energy Commodities Trading and Hedging.</li><li>Thesis: "Viability of Commodity Futures as Hedging Solutions for Utility Debt".</li></ul></div>
+    <div class="who"><a class="logo" href="https://www.hec.edu" target="_blank" rel="noopener" aria-label="HEC Paris website"><img src="https://www.hec.edu/themes/custom/hec_theme/logo.svg" alt="HEC Paris logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>HEC</b></a><div><h3>HEC Paris</h3><p class="role">MSc International Finance, 3.8/4.0 GPA, Paris <svg class="flag" role="img" aria-label="France"><use href="#flag-fr"/></svg></p></div></div>
+    <div><ul><li>Energy Markets (top of class), Electricity Markets, Energy Commodities Trading and Hedging.</li><li>Thesis: "Viability of Commodity Futures as Hedging Solutions for Utility Debt".</li></ul><div class="ratings"><a class="rating" href="https://www.topuniversities.com/universities/hec-paris" target="_blank" rel="noopener"><span class="logo sm"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://topuniversities.com&amp;size=128" alt="QS logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>QS</b></span><span><strong>#1 worldwide</strong><small>QS Business Masters Rankings 2027: Finance</small></span></a><a class="rating" href="https://rankings.ft.com/" target="_blank" rel="noopener"><span class="logo sm"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://ft.com&amp;size=128" alt="Financial Times logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>FI</b></span><span><strong>#2 in Europe</strong><small>FT European Business Schools Ranking 2025</small></span></a></div></div>
   </article>
-  <article class="row" data-reveal>
+  <article class="row" id="ucl" data-reveal>
     <div class="when">Sep 2021 to Jun 2024</div>
-    <div><h3>University College London</h3><p class="role">BSc Physics, Upper Second</p></div>
-    <div><ul><li>Thesis: "Feasibility of Repurposing EV Batteries for Power Storage in Sub-Saharan Africa".</li></ul></div>
+    <div class="who"><a class="logo" href="https://www.ucl.ac.uk" target="_blank" rel="noopener" aria-label="University College London website"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://ucl.ac.uk&amp;size=128" alt="University College London logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>UCL</b></a><div><h3>University College London</h3><p class="role">BSc Physics, Upper Second, London <svg class="flag" role="img" aria-label="United Kingdom"><use href="#flag-gb"/></svg></p></div></div>
+    <div><ul><li>Thesis: "Feasibility of Repurposing EV Batteries for Power Storage in Sub-Saharan Africa".</li><li>DECA 2022 Winner, awarded by <a class="org" href="https://www.deca.org" target="_blank" rel="noopener"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://deca.org&amp;size=64" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">DECA</a> and the UCL Business Society.</li></ul><div class="ratings"><a class="rating" href="https://www.topuniversities.com/universities/ucl" target="_blank" rel="noopener"><span class="logo sm"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://topuniversities.com&amp;size=128" alt="QS logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('nologo');this.remove()"><b>QS</b></span><span><strong>#8 in the world</strong><small>QS World University Rankings 2027</small></span></a></div></div>
   </article>
 </section>
 <div style="height:12vh"></div>
@@ -93,7 +113,7 @@
       <a href="https://github.com/1bykov" target="_blank" rel="noopener me">GitHub</a>
       <a href="Igor-Bykov-CV.pdf" target="_blank">CV (PDF)</a>
     </div>
-    <span>© 2026 Igor Bykov. London, UK.</span>
+    <span>© 2026 Igor Bykov. London, UK <svg class="flag" role="img" aria-label="United Kingdom"><use href="#flag-gb"/></svg></span>
   </div>
 </footer>
 <script src="main.js" defer></script>
